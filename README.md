@@ -31,3 +31,21 @@ Git basic
         `git checkout <branch_name>`
 
     
+Tasks 4–6
+
+- `task4/simulate_profile.py` includes @profile for profiling the jacobi function.
+- `task4/profiling_output.txt` contains line-by-line timing results from kernprof.
+- `task4/task4.sh` is the HPC script used to run the profiler.
+
+- `task5/simulate_parallel_static.py` uses static scheduling with executor.map().
+- `task5/task5.sh` is the submission script for running with different core counts.
+- `task5/output_static_1.txt`, `output_static_2.txt`, `output_static_4.txt`, and `output_static_8.txt` contain execution results for the different numbers of cores (1,2,4,8).
+
+- `task6/simulate_parallel_dynamic.py` uses dynamic scheduling with as_completed().
+- `task6/task6.sh` is the submission script.
+- `task6/output_dynamic.txt` contains the result using 4 cores.
+
+To run any script on the HPC, first activate the course environment:
+
+source /dtu/projects/02613_2025/conda/conda_init.sh  
+conda activate 02613
