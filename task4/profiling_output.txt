@@ -1,0 +1,23 @@
+Timer unit: 1e-06 s
+
+Total time: 72.3391 s
+File: simulate_profile.py
+Function: og_jacobi at line 60
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    60                                           @profile
+    61                                           def og_jacobi(u, interior_mask, max_iter, atol=1e-6):
+    62         5       5155.4   1031.1      0.0      u = np.copy(u)
+    63                                           
+    64     28423      26598.9      0.9      0.0      for i in range(max_iter):
+    65                                                   # Compute average of left, right, up and down neighbors, see eq. (1)
+    66     28423   43591675.1   1533.7     60.3          u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
+    67     28423    6628411.3    233.2      9.2          u_new_interior = u_new[interior_mask]
+    68     28423   14384335.6    506.1     19.9          delta = np.abs(u[1:-1, 1:-1][interior_mask] - u_new_interior).max()
+    69     28423    7629830.5    268.4     10.5          u[1:-1, 1:-1][interior_mask] = u_new_interior
+    70                                           
+    71     28423      73050.2      2.6      0.1          if delta < atol:
+    72         5          4.0      0.8      0.0              break
+    73         5          1.7      0.3      0.0      return u
+
