@@ -1,0 +1,56 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859631: <parallel_dynamic> in cluster <dcc> Exited
+
+Job <parallel_dynamic> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 13:27:44 2025
+Job was executed on host(s) <4*n-62-31-8>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 13:27:45 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 13:27:45 2025
+Terminated at Fri May  2 13:34:17 2025
+Results reported at Fri May  2 13:34:17 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_dynamic
+#BSUB -o output_dynamic.txt
+#BSUB -e error_dynamic.txt
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -W 20
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_dynamic.py 100 > results_dynamic.csv
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1457.82 sec.
+    Max Memory :                                 316 MB
+    Average Memory :                             243.20 MB
+    Total Requested Memory :                     4096.00 MB
+    Delta Memory :                               3780.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                11
+    Run time :                                   454 sec.
+    Turnaround time :                            393 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_dynamic.txt> for stderr output of this job.
+

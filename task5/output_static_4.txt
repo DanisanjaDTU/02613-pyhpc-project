@@ -1,0 +1,397 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859191: <parallel_static> in cluster <dcc> Done
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:18:20 2025
+Job was executed on host(s) <4*n-62-31-16>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:18:22 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:18:22 2025
+Terminated at Fri May  2 12:25:17 2025
+Results reported at Fri May  2 12:25:17 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -W 10
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1579.03 sec.
+    Max Memory :                                 121 MB
+    Average Memory :                             117.00 MB
+    Total Requested Memory :                     4096.00 MB
+    Delta Memory :                               3975.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                11
+    Run time :                                   424 sec.
+    Turnaround time :                            417 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859326: <parallel_static> in cluster <dcc> Exited
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:34:32 2025
+Job was executed on host(s) <n-62-31-21>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:34:33 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:34:33 2025
+Terminated at Fri May  2 12:34:35 2025
+Results reported at Fri May  2 12:34:35 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 1
+#BSUB -R "span[hosts=1]"
+#BSUB -W 10
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.65 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   25 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859357: <parallel_static> in cluster <dcc> Exited
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:37:07 2025
+Job was executed on host(s) <n-62-31-21>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:37:09 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:37:09 2025
+Terminated at Fri May  2 12:45:44 2025
+Results reported at Fri May  2 12:45:44 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 1
+#BSUB -R "span[hosts=1]"
+#BSUB -W 10
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   503.00 sec.
+    Max Memory :                                 70 MB
+    Average Memory :                             49.57 MB
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               954.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                8
+    Run time :                                   519 sec.
+    Turnaround time :                            517 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859408: <parallel_static> in cluster <dcc> Exited
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:50:40 2025
+Job was executed on host(s) <2*n-62-31-7>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:50:41 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:50:41 2025
+Terminated at Fri May  2 12:56:16 2025
+Results reported at Fri May  2 12:56:16 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 2
+#BSUB -R "span[hosts=1]"
+#BSUB -W 25
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   662.36 sec.
+    Max Memory :                                 89 MB
+    Average Memory :                             88.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1959.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   365 sec.
+    Turnaround time :                            336 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859392: <parallel_static> in cluster <dcc> Exited
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:47:30 2025
+Job was executed on host(s) <n-62-31-21>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:47:31 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:47:31 2025
+Terminated at Fri May  2 12:56:26 2025
+Results reported at Fri May  2 12:56:26 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 1
+#BSUB -R "span[hosts=1]"
+#BSUB -W 25
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   533.00 sec.
+    Max Memory :                                 71 MB
+    Average Memory :                             49.43 MB
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               953.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                8
+    Run time :                                   535 sec.
+    Turnaround time :                            536 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859411: <parallel_static> in cluster <dcc> Exited
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:51:40 2025
+Job was executed on host(s) <8*n-62-11-52>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:51:42 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:51:42 2025
+Terminated at Fri May  2 12:56:33 2025
+Results reported at Fri May  2 12:56:33 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 8
+#BSUB -R "span[hosts=1]"
+#BSUB -W 25
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   2274.00 sec.
+    Max Memory :                                 175 MB
+    Average Memory :                             38.80 MB
+    Total Requested Memory :                     8192.00 MB
+    Delta Memory :                               8017.00 MB
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                15
+    Run time :                                   306 sec.
+    Turnaround time :                            293 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24859431: <parallel_static> in cluster <dcc> Exited
+
+Job <parallel_static> was submitted from host <hpclogin1> by user <s243300> in cluster <dcc> at Fri May  2 12:56:47 2025
+Job was executed on host(s) <8*n-62-11-52>, in queue <hpc>, as user <s243300> in cluster <dcc> at Fri May  2 12:56:49 2025
+</zhome/23/1/213436> was used as the home directory.
+</zhome/23/1/213436> was used as the working directory.
+Started at Fri May  2 12:56:49 2025
+Terminated at Fri May  2 12:57:20 2025
+Results reported at Fri May  2 12:57:20 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J parallel_static
+#BSUB -o output_static.txt
+#BSUB -e error_static.txt
+#BSUB -q hpc
+#BSUB -n 8
+#BSUB -R "span[hosts=1]"
+#BSUB -W 25
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_parallel_static.py 100 > results_static.csv
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   158.00 sec.
+    Max Memory :                                 161 MB
+    Average Memory :                             54.33 MB
+    Total Requested Memory :                     8192.00 MB
+    Delta Memory :                               8031.00 MB
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                15
+    Run time :                                   33 sec.
+    Turnaround time :                            33 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <error_static.txt> for stderr output of this job.
+
